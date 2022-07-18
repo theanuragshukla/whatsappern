@@ -22,3 +22,10 @@ body {
 	--blue:#34b7f1;
 	--gray:#ece5dd;
 }
+span {
+	color: #000;
+	display: block;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
