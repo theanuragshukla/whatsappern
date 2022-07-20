@@ -1,8 +1,9 @@
 import {NavMain ,DpDiv,Brand , Icons, Icon} from './navComponents'
-import {VoiceCall,VideoCall,OptionsIcon,BackIcon} from './icons/AllIcons'
+import {VoiceCall,VideoCall,OptionsIcon,BackIcon,SendIcon} from './icons/AllIcons'
+import {ChatMain,Chats,InputMain,InputDiv,Send} from './ChatComponents'
 const Chat = () => {
 	return (
-		<>
+		<ChatMain>
 		<NavMain>
 		<Brand>
 		<Icons className="backIcon">
@@ -20,9 +21,25 @@ const Chat = () => {
 		<Icon><VideoCall/></Icon>
 		<Icon><OptionsIcon/></Icon>
 		</Icons>
-		
-	</NavMain>
-		</>
+		</NavMain>
+		<Chats></Chats>
+		<InputMain>
+		<InputDiv>
+		<Icons>
+		<Icon>
+		<OptionsIcon/>
+		</Icon>
+		</Icons>
+		</InputDiv>
+		<Send>
+
+		<Icons><Icon>
+		<SendIcon></SendIcon>
+		</Icon>
+		</Icons>
+		</Send>
+		</InputMain>
+		</ChatMain>
 	)
 }
 export default Chat
