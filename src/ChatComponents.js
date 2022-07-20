@@ -1,4 +1,4 @@
-import styled,{css} from 'styled-components'
+import styled from 'styled-components'
 
 const ChatMain = styled.div`
 width:100%;
@@ -31,6 +31,8 @@ const InputMain = styled.div`
 	position:absolute;
 	background-color:var(--gray);
 	display: flex;
+	position:fixed;
+	bottom:0;
 
 `
 const InputDiv = styled.div`
@@ -62,17 +64,17 @@ width:55px;
 	}
 `
 const Input = styled.input`
-    ${props =>   props.type === 'text' && `
-        width: 100%;
-        height: 55px;
-        background-color: rgba(104, 105, 102, 0.1);
-        border: 1px solid #354545;
-        margin-top: 20px;
-        outline: none;
-        padding-left: 40px;
-        color: white;
-        font-size: 22px;
-    `}
+	${props =>   props.type === 'text' && `
+		width: 100%;
+		height: 55px;
+		background-color: rgba(104, 105, 102, 0.1);
+		border: 1px solid #354545;
+		margin-top: 20px;
+		outline: none;
+		padding-left: 40px;
+		color: white;
+		font-size: 22px;
+	`}
 `;
 const Send = styled.div`
 height:55px;
